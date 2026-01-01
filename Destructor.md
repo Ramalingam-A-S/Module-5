@@ -1,3 +1,4 @@
+
 # Destructor in Python
 
 This project demonstrates how to implement a **destructor** in Python using a simple class.
@@ -21,9 +22,21 @@ The program defines a class `Demo` with:
    - Create an instance of the `Demo` class.
    - Delete the object using the `del` keyword.
 ## Program
-Add code Here
+```
+class Demo:
+    def __init__(self):
+        self.status="Alive"
+        print(self.status)
+    def __del__(self):
+        print("Object is destroyed")
+d=Demo()
+del d
+```
 
 ## 🧪 Output
-
+```
+Alive
+Object is destroyed
+```
 ## Result
-
+Thus the program ran successfully and output was verified
