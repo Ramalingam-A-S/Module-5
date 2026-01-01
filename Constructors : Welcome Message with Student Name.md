@@ -1,3 +1,4 @@
+
 # # Constructors in Python: Welcome Message with Student Name
 
 ## 🎯 Aim
@@ -11,9 +12,21 @@ To write a Python program that creates a **Student** class with a **default cons
 5. **Execute the Program**: Instantiate the `Student` class and call the `show` method.
 
 ## 🧾 Program
-
-Add code here
-
+```
+class Student:
+    def __init__(self,a):
+        self.a=a
+    def print(self):
+        print("Welcome",self.a)
+        
+a=input()
+s=Student(a)
+s.print()
+```
 ## Output
-
+```
+Saveetha
+Welcome Saveetha
+```
 ## Result
+Thus the program ran successfully and output was verified
